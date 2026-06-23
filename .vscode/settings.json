@@ -1,5 +1,13 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:conda",
     "python-envs.defaultPackageManager": "ms-python.python:conda",
-    "editor.fontSize": 20
+    "editor.fontSize": 20,
+    "cSpell.words": [
+        "dotenv",
+        "mlproject",
+        "mydb",
+        "numpy",
+        "pymysql",
+        "scikit"
+    ]
 }
