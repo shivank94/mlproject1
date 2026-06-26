@@ -3,11 +3,14 @@
     "python-envs.defaultPackageManager": "ms-python.python:conda",
     "editor.fontSize": 20,
     "cSpell.words": [
+        "catboost",
         "dotenv",
         "mlproject",
         "mydb",
         "numpy",
         "pymysql",
-        "scikit"
+        "scikit",
+        "seaborn",
+        "xgboost"
     ]
 }
