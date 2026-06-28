@@ -3,6 +3,8 @@ from src.mlproject1.exception import CustomException
 from src.mlproject1.components.data_ingestion import DataIngestion
 from src.mlproject1.components.data_ingestion import DataIngestionConfig
 from src.mlproject1.components.data_transformation import DataTransformationConfig,DataTransformation
+from src.mlproject1.components.model_trainer import ModelTrainerConfig,ModelTrainer
+
 import sys
 
 
@@ -16,7 +18,17 @@ if __name__=="__main__":
 
         #data_transformation_config=DataTransformationConfig()
         data_transformation=DataTransformation()
-        data_transformation.initiate_data_transformation(train_path=train_data_path,test_path=test_data_path)
+        train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_path=train_data_path,test_path=test_data_path)
+
+        ## Model training
+
+        model_trainer_config=ModelTrainerConfig()
+        model_trainer=ModelTrainer()
+        print(model_trainer.initiate_model_trainer(train_array=train_arr,test_array=test_arr))
+        logging.info("the execution has completed")
+
+
+
 
     except Exception as e:
         logging.info("the execution has failed")
