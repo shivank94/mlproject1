@@ -4,6 +4,7 @@
     "editor.fontSize": 20,
     "cSpell.words": [
         "catboost",
+        "dagshub",
         "dotenv",
         "mlflow",
         "mlproject",
@@ -12,6 +13,7 @@
         "pymysql",
         "scikit",
         "seaborn",
+        "shivank",
         "xgboost"
     ]
 }
