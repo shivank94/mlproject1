@@ -10,6 +10,7 @@
         "mlproject",
         "mydb",
         "numpy",
+        "preds",
         "pymysql",
         "scikit",
         "seaborn",
